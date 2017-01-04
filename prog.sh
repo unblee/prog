@@ -3,9 +3,9 @@
 # progress <print text: string> <condition command: string> [<repeat count: int>]
 # e.g. progress.sh "Downloading" "[ ! -e /tmp/file ]" 10
 
-local orig_text=$1
-local condition=$2
-local repeat
+orig_text=$1
+condition=$2
+repeat
 [ -z $3 ] && repeat=3 || repeat=$3
 
 while `eval ${condition}`
