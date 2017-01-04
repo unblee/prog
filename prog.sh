@@ -19,7 +19,3 @@ do
     echo -en "\r" && echo -n ${text} | sed "s/./ /g"
   done
 done
-
-unset orig_text
-unset condition
-unset repeat
