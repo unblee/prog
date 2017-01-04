@@ -1,7 +1,7 @@
 #!/bin/sh
 
-# progress <print text: string> <condition command: string> [<repeat count: int>]
-# e.g. progress.sh "Downloading" "[ ! -e /tmp/file ]" 10
+# prog.sh <print text: string> <condition command: string> [<repeat count: int>]
+# e.g. prog.sh "Downloading" "[ ! -e /tmp/file ]" 10
 
 [[ -z $T ]] && orig_text=$1 || orig_text=$T
 [[ -z $C ]] && condition=$2 || condition=$C
